@@ -1,0 +1,8 @@
+az functionapp deployment source config-zip --resource-group pagescraper_group  --name pagescraper  --src https://github.com/hidakiryga/pagescraper/releases/download/v1/pagescraper.zip
+
+az functionapp deployment source config-zip --resource-group pagescraper_group  --name pagescraper  --src "D:\Git Hub\ulbertAO\TestTimer\pagescraper.zip"
+
+az functionapp deployment source config-zip --resource-group pagescraper_group  --name pagescraper  --src "D:\Git Hub\ulbertAO\TestTimer\TestTimer\bin\Debug\net8.0\test-2809-0019.zip"
+
+
+az functionapp function list --resource-group pagescraper_group --name pagescraper

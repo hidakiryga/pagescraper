@@ -17,7 +17,7 @@ namespace TestTimer
         }
 
         [Function("Function1")]
-        public async Task Run([TimerTrigger("0 */6 * * * *",RunOnStartup =true)] TimerInfo myTimer)
+        public async Task Run([TimerTrigger("0 */6 * * * *", RunOnStartup = true)] TimerInfo myTimer)
         {
             _logger.LogInformation($"C# Timer trigger function executed at: {DateTime.Now}");
 
@@ -72,7 +72,7 @@ namespace TestTimer
             return (new()
             {
                 { "accept", "*/*" },
-                { "accept-encoding", "gzip, deflate, br, zstd" },
+                // { "accept-encoding", "gzip, deflate, br, zstd" },
                 { "accept-language", "en-GB,en;q=0.9,en-US;q=0.8" },
                 { "sec-ch-ua", $"\"Microsoft Edge\";v=\"129\", \"Not=A?Brand\";v=\"8\", \"Chromium\";v=\"129\"" },
                 { "sec-ch-ua-platform", $"\"Windows\"" },
